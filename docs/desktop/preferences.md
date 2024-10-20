@@ -24,42 +24,42 @@
 - __Default profile__ – default profile used for [Validation](validation.md)
 - __Errors limit__ – number of errors that are listed in the [Validation view](validation.md)
 
-![Preferences Validation](/images/image-49.png)
+![Preferences Validation](../../images/image-49.png)
 
 ## Display
 
-![Preferences Display](/images/image-45.png)
+![Preferences Display](../../images/image-45.png)
 
 ## Panels
 
-![Preferences Panels](/images/image-46.png)
+![Preferences Panels](../../images/image-46.png)
 
 ## Shortcuts
 
 Customize shortcuts to accelerate your work.
 
-![Preferences Shortcuts](/images/image-47.png)
+![Preferences Shortcuts](../../images/image-47.png)
 
 ## App View
 
-![Preferences App View](/images/image-48.png)
+![Preferences App View](../../images/image-48.png)
 
 ## Accessibility
 
 Quick access tags refer to a list of the most frequently used tags for utilization in document view menus and panels.
 
-![Preferences Accessibility](/images/image-32.png)
+![Preferences Accessibility](../../images/image-32.png)
 
 ## PageMap
 
-![Preferences PageMap](/images/image-33.png)
+![Preferences PageMap](../../images/image-33.png)
 
 ## Table Tool
 
 Customized theme for the [table tool](table-tool.md).
 
-![Preferences Table Tool](/images/image-35.png)
+![Preferences Table Tool](../../images/image-35.png)
 
 ## Template
 
-![Preferences Template](/images/image-68.png)
+![Preferences Template](../../images/image-68.png)

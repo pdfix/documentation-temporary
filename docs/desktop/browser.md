@@ -1,3 +1,3 @@
 # Browser
 
-![Browser pane](/images/image-73.png)
+![Browser pane](../../images/image-73.png)

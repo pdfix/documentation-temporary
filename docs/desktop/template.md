@@ -6,7 +6,7 @@ Recognition can be tailored for specific objects by considering their type, styl
 
 An example: Assist in identifying headings by analyzing the font name and size.
 
-![Template pane screenshot](/images/image-74.png)
+![Template pane screenshot](../../images/image-74.png)
 
 ## Template configuration
 

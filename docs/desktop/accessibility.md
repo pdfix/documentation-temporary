@@ -2,9 +2,9 @@
 
 With PDFix, you can ensure your PDFs are accessible and compliant with standards such as Web Content Accessibility Guidelines (WCAG) and PDF/UA (Universal Access).
 
-The ![Accessibility](/images/accessible.png) __Accessibility panel__ offers a range of tools to make your documents accessible.
+The ![Accessibility](../../images/accessible.png) __Accessibility panel__ offers a range of tools to make your documents accessible.
 
-![Preferences Template](/images/image-69.png)
+![Preferences Template](../../images/image-69.png)
 
 First, start by selecting whether your document is untagged or already contains tags.
 
@@ -30,16 +30,16 @@ Manual tagging works for different types of selection. Use [Default Tool](tools.
 
 This action utilizes layout recognition algorithms in the background, allowing you to re-tag even complex content such as tables and lists.
 
-![Tag As](/images/image-30.png)
+![Tag As](../../images/image-30.png)
 
 ## Role Map
 
-![Role Map](/images/rolemap.png) __Role Map__ matches each custom tag to a standard tag. When assistive software encounters a custom tag, it checks this role map to properly interpret the tags. Tagging PDFs using one of the methods described here generally produces a correct role map for the document.
+![Role Map](../../images/rolemap.png) __Role Map__ matches each custom tag to a standard tag. When assistive software encounters a custom tag, it checks this role map to properly interpret the tags. Tagging PDFs using one of the methods described here generally produces a correct role map for the document.
 
 Within the top toolbar menu, you can Add, Edit, or Delete role mappings. If the mapping of one or more non-standard types is semantically inappropriate, you can correct this error here.
 
 ## Class Map
 
-![Class Map](/images/classmap.png) __Class Map__ store attributes that are associated with each object in your PDF document. Each tag within the document may have a list of names that identify the classes to which it belongs.
+![Class Map](../../images/classmap.png) __Class Map__ store attributes that are associated with each object in your PDF document. Each tag within the document may have a list of names that identify the classes to which it belongs.
 
 The option menu in the toolbar allows you to Add, Edit, or Delete any set of attributes associated with these class maps.
