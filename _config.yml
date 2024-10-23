@@ -1,9 +1,7 @@
-remote_theme: jekyll-theme-minimalistic
-
 title: Minimalistic
+logo: /assets/img/logo.jpg
+email: person@address.com
 description: Minimalistic is a theme powered by Jekyll.
-logo: ./logo.jpg
-email: vbhvvikas@gmail.com
 favicon: true
 color-scheme: auto
 
@@ -19,7 +17,6 @@ platforms:
   - name: LinkedIn
     icon: <i class="fa-brands fa-linkedin"></i>
     link: https://www.linkedin.com/in/vaibhavvikas
-
 
 navigation:
   - name: Readme
