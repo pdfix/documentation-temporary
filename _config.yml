@@ -8,9 +8,11 @@ just_the_docs:
     - name: "Docs"
       output: true
 
-sidebar:
-  nav: "docs"  # Point this to the navigation data file
-
+# Navigation menu
+header_pages:
+  - index.md
+  - docs/workspace.md
+  - docs/accessibility.md
 
 # Configuration for the sidebar (manually added sidebar support)
 sidebar:
