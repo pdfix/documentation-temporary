@@ -85,14 +85,14 @@ Markdown is a lightweight markup language that's easy to write and read. Here ar
 11. **Images**:
 
    - This is an image:  
-   ![alt text](../../images/sample.png)
+   ![alt text](../images/sample.png)
    ```
-   ![alt text](../../images/sample.png)
+   ![alt text](../images/sample.png)
    ```
 - This is inline image:
-This is some text with an image ![alt text](../../images/appfiles.png) right in the middle of the sentence.
+This is some text with an image ![alt text](../images/appfiles.png) right in the middle of the sentence.
 ```
-This is some text with an image ![alt text](../../images/appfiles.png) right in the middle of the sentence.
+This is some text with an image ![alt text](../images/appfiles.png) right in the middle of the sentence.
 
 ```
 

@@ -1,3 +1,13 @@
-title: My Project Documentation
-description: A guide to using my project
+title: Your Site Title
 theme: jekyll-theme-cayman
+url: "https://documentation-temporary.github.io" # Your domain name, including http:// or https://
+
+just_the_docs:
+  show_sidebar: true
+  collections:
+    - name: "Docs"
+      output: true
+
+sidebar:
+  nav: "docs"  # Point this to the navigation data file
+
