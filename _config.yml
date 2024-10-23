@@ -11,3 +11,14 @@ just_the_docs:
 sidebar:
   nav: "docs"  # Point this to the navigation data file
 
+
+# Configuration for the sidebar (manually added sidebar support)
+sidebar:
+  nav_title: "Site Navigation" # Sidebar title
+  nav:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: "/about/"
+    - title: "Contact"
+      url: "/contact/"
