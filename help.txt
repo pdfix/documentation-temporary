@@ -2,11 +2,16 @@
 const pdfix_queries = {
   "not_found": "https://pdfix.net/user-guide-not-supported/",
 
+  // Special actions that have multiple functionality
+  "kPvActionSelFindChar": "https://pdfix.net/user-guide-tags/",
+  "kPvActionSelFindContent": "https://pdfix.net/user-guide-tags/",
+  "kPvActionSelFindTag": "https://pdfix.net/user-guide-tags/",
+  "kPvActionSelFindAnnot": "https://pdfix.net/user-guide-tags/",
+  "kPvActionProperties": "https://pdfix.net/user-guide-tags/",
 
   // PDFix Desktop Product links
   "product_change_log": "https://pdfix.net/pdfix-desktop-changelog/",
   "product_upgrade": "https://pdfix.net/pricing/",
-
 
   // Tag Tool
   "kPvActionToolTag": "https://pdfix.net/user-guide-tag-tool",
@@ -24,7 +29,9 @@ const pdfix_queries = {
   "kPvActionShowAssociatedHeaders": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
   "kPvActionShowAssociatedChildren": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
   "kPvActionShowConjugatedNote": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
-  
+  "kPvActionSelSelectAssociatedSimple": "https://pdfix.net/user-guide-tag-tool/#Edit-Table-Headers",
+  "kPvActionSelSelectAssociated": "https://pdfix.net/user-guide-tag-tool/#Edit-Table-Headers",
+  "kPvActionSelSelectAsMoveAfter": "hhttps://pdfix.net/user-guide-tag-tool/#Move-Tag",
 
   // Template general
   "pdf_template": "https://pdfix.net/user-guide-template/",
@@ -161,22 +168,33 @@ const pdfix_queries = {
   "kPvActionProperties_bmk": "https://pdfix.net/user-guide-bookmarks/#Bookmark-Properties",
   "kPvActionSelEdit_bmk": "https://pdfix.net/user-guide-bookmarks/#Edit-Bookmark",
   "kPvActionSelDelete_bmk": "https://pdfix.net/user-guide-bookmarks/#Delete-Bookmark",
-  "kPvActionBmkAddFromTags": "https://pdfix.net/user-guide-bookmarks/#Create-Bookmarks",
-  "kPvActionBmkRootDelete": "https://pdfix.net/user-guide-bookmarks/#Delete-Bookmarks",
+  "kPvActionBmkAddFromTags": "https://pdfix.net/pdfix-batch-commands/#create-bookmarks",
+  "kPvActionBmkRootDelete": "https://pdfix.net/pdfix-batch-commands/#clear-document-structure",
 
+  // Thumbnail panel
   "Thumbnails_panel": "https://pdfix.net/user-guide-not-supported/",
 
-  "Content_panel": "https://pdfix.net/user-guide-not-supported/",
-  
-  // Annotation DocView
+  // Content Panel
+  "Content_panel": "https://pdfix.net/user-guide-content/#Content-panel",
+  "kPvActionDocFlattenFormXObjects": "https://pdfix.net/pdfix-batch-commands/#flatten-form-xobjects",
+  "kPvActionSelFlattenFormXObjects": "https://pdfix.net/pdfix-batch-commands/#flatten-form-xobjects",
+  "kPvActionDocClearMcStructure": "https://pdfix.net/pdfix-batch-commands/#remove-content-marks",
+  "kPvActionSelClearMcStructure": "https://pdfix.net/pdfix-batch-commands/#remove-content-marks",
+  "kPvActionDocArtifactUntagged": "https://pdfix.net/pdfix-batch-commands/#artifact-content",
+  "kPvActionSelArtifactUntagged": "https://pdfix.net/pdfix-batch-commands/#artifact-content",
+  "kPvActionShowArtifacts": "https://pdfix.net/user-guide-content/#Show-Artifacts",
+  "kPvActionShowUnmarkedContent": "https://pdfix.net/user-guide-content/#Show-Unmarked-Content",
+  "kPvActionShowMc": "https://pdfix.net/user-guide-content/#Show-Tagged-Content",
+
+  // Annotation Panel
   "Annotations_panel": "https://pdfix.net/user-guide-annotations/#Annotations-panel",
-  "kPvActionDocSetTabsKeys": "https://pdfix.net/user-guide-annotations/#Set-Tab-Order",
-  "kPvActionDocTagAnnot": "https://pdfix.net/user-guide-annotations/#Tag-Annotations",
-  "kPvActionDocSetAnnotsContents": "https://pdfix.net/user-guide-annotations/#Set-Contents",
-  "kPvActionDocFlattenAnnots": "https://pdfix.net/user-guide-annotations/#Flatten-Annotations",
-  "kPvActionDocCreateWebLinks": "https://pdfix.net/user-guide-annotations/#Create-Web-Links",
-  "kPvActionDocDeleteAnnots": "https://pdfix.net/user-guide-annotations/#Delete-Annotations",
-  "kPvActionDocFixMediaClipKeys": "https://pdfix.net/user-guide-annotations/#Fix-Media-Clip-Keys",
+  "kPvActionDocSetTabsKeys": "https://pdfix.net/pdfix-batch-commands/#set-tab-order",
+  "kPvActionDocTagAnnot": "https://pdfix.net/pdfix-batch-commands/#tag-annotations",
+  "kPvActionDocSetAnnotsContents": "https://pdfix.net/pdfix-batch-commands/#set-contents",
+  "kPvActionDocFlattenAnnots": "https://pdfix.net/pdfix-batch-commands/#flatten-annotations",
+  "kPvActionDocCreateWebLinks": "https://pdfix.net/pdfix-batch-commands/#create-web-links",
+  "kPvActionDocDeleteAnnots": "https://pdfix.net/pdfix-batch-commands/#delete-annotations",
+  "kPvActionDocFixMediaClipKeys": "https://pdfix.net/pdfix-batch-commands/#fix-media-clip",
 
   "Tags_panel": "https://pdfix.net/user-guide-tags/",
 
