@@ -1,0 +1,214 @@
+<script>
+const pdfix_queries = {
+  "not_found": "https://pdfix.net/user-guide-not-supported/",
+
+
+  // PDFix Desktop Product links
+  "product_change_log": "https://pdfix.net/pdfix-desktop-changelog/",
+  "product_upgrade": "https://pdfix.net/pricing/",
+
+
+  // Tag Tool
+  "kPvActionToolTag": "https://pdfix.net/user-guide-tag-tool",
+  "kPvActionShowAllTags": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowFillBackground": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowReadingOrder": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowReadingOrderGroup": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowReadingOrderCentre": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowCellScope": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowCellSpan": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowCellMissingHeader": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowTagName": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowTagContent": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowTableSummary": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowAssociatedHeaders": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowAssociatedChildren": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  "kPvActionShowConjugatedNote": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
+  
+
+  // Template general
+  "pdf_template": "https://pdfix.net/user-guide-template/",
+  "pdf_template_settings": "https://pdfix.net/user-guide-template/#Settings",
+  "pdf_template_pagemap": "https://pdfix.net/user-guide-template/#threshold-values",
+  "pdf_template_pagemap_regex": "https://pdfix.net/user-guide-template/#regular-expressions",
+  "pdf_template_path_object_process": "https://pdfix.net/user-guide-template/#path_object_process",
+  "pdf_template_image_object_process": "https://pdfix.net/user-guide-template/#image_object_process",
+  "pdf_template_line_update": "https://pdfix.net/user-guide-template/#line_update",  
+  "pdf_template_rect_update": "https://pdfix.net/user-guide-template/#rect_update",  
+  "pdf_template_word_update": "https://pdfix.net/user-guide-template/#word_update",  
+  "pdf_template_word_spacing": "https://pdfix.net/user-guide-template/#word_spacing",  
+  "pdf_template_text_line_add_word": "https://pdfix.net/user-guide-template/#text_line_add_word",  
+  "pdf_template_text_line_update": "https://pdfix.net/user-guide-template/#text_line_update",  
+  "pdf_template_text_line_split_filling": "https://pdfix.net/user-guide-template/#text_line_split_filling",  
+  "pdf_template_text_line_neighbours": "https://pdfix.net/user-guide-template/#text_line_neighbours",  
+  "pdf_template_text_updatee": "https://pdfix.net/user-guide-template/#text_update",  
+  "pdf_template_element_create": "https://pdfix.net/user-guide-template/#element_create",  
+  "pdf_template_element_update": "https://pdfix.net/user-guide-template/#element_update",  
+  "pdf_template_table_recognize": "https://pdfix.net/user-guide-template/#table_recognize",  
+  "pdf_template_caption_join": "https://pdfix.net/user-guide-template/#caption_join",  
+  "pdf_template_table_update": "https://pdfix.net/user-guide-template/#table_update",  
+  "pdf_template_table_detect_header": "https://pdfix.net/user-guide-template/#table_detect_header",  
+  "pdf_template_table_split": "https://pdfix.net/user-guide-template/#table_split",  
+  "pdf_template_single_instance_detect": "https://pdfix.net/user-guide-template/#single_instance_detect",  
+  "pdf_template_alt_update": "https://pdfix.net/user-guide-template/#alt_update",  
+  "pdf_template_actual_text_update": "https://pdfix.net/user-guide-template/#actual_text_update",  
+  "pdf_template_artifact_update": "https://pdfix.net/user-guide-template/#artifact_update",  
+  "pdf_template_reading_order_detect": "https://pdfix.net/user-guide-template/#reading_order_detect",  
+  "pdf_template_label_update": "https://pdfix.net/user-guide-template/#label_update",  
+  "pdf_template_list_update": "https://pdfix.net/user-guide-template/#list_update",  
+  "pdf_template_tag_list": "https://pdfix.net/user-guide-template/#tag_list",  
+  "pdf_template_tag_image": "https://pdfix.net/user-guide-template/#tag_image",  
+  "pdf_template_tag_table": "https://pdfix.net/user-guide-template/#tag_table",  
+  "pdf_template_tag_annot": "https://pdfix.net/user-guide-template/#tag_annot",  
+  "pdf_template_tag_update": "https://pdfix.net/user-guide-template/#tag_update",  
+  "pdf_template_annot_update": "https://pdfix.net/user-guide-template/#annot_update",  
+
+  // Action custom dialog ui components 
+  "pdf_action_tag_names": "https://pdfix.net/user-guide-tags-define/",
+  "pdf_action_annot_types": "https://pdfix.net/user-guide-annotations-define/",
+  "pdf_action_objects_types": "https://pdfix.net/user-guide-content-define/",
+
+  // Special actions 
+  "pdf_action_default": "https://pdfix.net/user-guide-action-manager/#Default-Actions",
+  "pdf_action_custom": "https://pdfix.net/user-guide-action-manager/#Custom-Actions",
+  "pdf_action_extern": "https://pdfix.net/actions-marketplace/",
+  "pdf_action_validation": "https://pdfix.net/pdfix-batch-commands/#validation",
+  "pdf_action_validation_report": "https://pdfix.net/pdfix-batch-commands/#validation",
+
+  // Base actions
+  "pdf_action_set_pdf_ua_standard": "https://pdfix.net/pdfix-batch-commands/#set_pdf_ua_standard",
+  "pdf_action_set_suspect_value": "https://pdfix.net/pdfix-batch-commands/#set_suspect_value",
+  "pdf_action_fix_oc_name": "https://pdfix.net/pdfix-batch-commands/#fix_oc_name",
+  "pdf_action_set_display_doc_title": "https://pdfix.net/pdfix-batch-commands/#set_display_doc_title",
+  "pdf_action_remove_standard_tags_mapping": "https://pdfix.net/pdfix-batch-commands/#remove_standard_tags_mapping",
+  "pdf_action_set_language": "https://pdfix.net/pdfix-batch-commands/#set_language",
+  "pdf_action_set_title": "https://pdfix.net/pdfix-batch-commands/#set_title",
+  "pdf_action_add_tags": "https://pdfix.net/pdfix-batch-commands/#add_tags",
+  "pdf_action_clear_structure": "https://pdfix.net/pdfix-batch-commands/#clear_structure",
+  "pdf_action_fix_id_tree": "https://pdfix.net/pdfix-batch-commands/#fix_id_tree e",
+  "pdf_action_fix_parent_tree": "https://pdfix.net/pdfix-batch-commands/#fix_parent_tree",
+  "pdf_action_fix_media_clip_keys": "https://pdfix.net/pdfix-batch-commands/#fix_media_clip_keys",
+  "pdf_action_set_tabs_key": "https://pdfix.net/pdfix-batch-commands/#set_tabs_key",
+  "pdf_action_tag_annot": "https://pdfix.net/pdfix-batch-commands/#tag_annot",
+  "pdf_action_set_annot_contents": "https://pdfix.net/pdfix-batch-commands/#set_annot_contents",
+  "pdf_action_flatten_annot": "https://pdfix.net/pdfix-batch-commands/#flatten_annot",
+  "pdf_action_create_web_links": "https://pdfix.net/pdfix-batch-commands/#create_web_links",
+  "pdf_action_delete_annot": "https://pdfix.net/pdfix-batch-commands/#delete_annot",
+  "pdf_action_create_bookmarks": "https://pdfix.net/pdfix-batch-commands/#create_bookmarks",
+  "pdf_action_artifact_content": "https://pdfix.net/pdfix-batch-commands/#artifact_content",
+  "pdf_action_flatten_xobject": "https://pdfix.net/pdfix-batch-commands/#flatten_xobject",
+  "pdf_action_remove_content_marks": "https://pdfix.net/pdfix-batch-commands/#remove_content_marks",
+  "pdf_action_pdf_to_html": "https://pdfix.net/pdfix-batch-commands/#pdf_to_html",
+  "pdf_action_pdf_to_json": "https://pdfix.net/pdfix-batch-commands/#pdf_to_json",
+  "pdf_action_embed_font": "https://pdfix.net/pdfix-batch-commands/#embed_font",
+  "pdf_action_replace_font": "https://pdfix.net/pdfix-batch-commands/#replace_font",
+  "pdf_action_add_missing_unicode": "https://pdfix.net/pdfix-batch-commands/#add_missing_unicode",
+  "pdf_action_set_doc_info": "https://pdfix.net/pdfix-batch-commands/#set_doc_info",
+  "pdf_action_rotate_pages": "https://pdfix.net/pdfix-batch-commands/#rotate_pages",
+  "pdf_action_delete_tags": "https://pdfix.net/pdfix-batch-commands/#delete_tags",
+  "pdf_action_apply_standard_tags": "https://pdfix.net/pdfix-batch-commands/#apply_standard_tags",
+  "pdf_action_set_tag_id": "https://pdfix.net/pdfix-batch-commands/#set_tag_id",
+  "pdf_action_set_tag_bbox": "https://pdfix.net/pdfix-batch-commands/#set_tag_bbox",
+  "pdf_action_set_alt": "https://pdfix.net/pdfix-batch-commands/#set_alt s",
+  "pdf_action_fix_placement": "https://pdfix.net/pdfix-batch-commands/#fix_placement",
+  "pdf_action_remove_tag_data": "https://pdfix.net/pdfix-batch-commands/#remove_tag_data",
+  "pdf_action_set_table_summary": "https://pdfix.net/pdfix-batch-commands/#set_table_summary",
+  "pdf_action_set_structure_attribute": "https://pdfix.net/pdfix-batch-commands/#set_structure_attribute",
+  "pdf_action_fix_structure_spaces": "https://pdfix.net/pdfix-batch-commands/#fix_structure_spaces",
+  "pdf_action_fix_headings": "https://pdfix.net/pdfix-batch-commands/#fix_headings",
+
+  // PipelineActionsDialog
+  "PipelineActionsDialog_add": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_edit": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_run": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_remove": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_reset": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_export": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_import": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_import_extern": "https://pdfix.net/user-guide-action-manager/",
+  "PipelineActionsDialog_clone": "https://pdfix.net/user-guide-action-manager/",
+  
+  // CustomActionDialog
+  "CustomActionDialog_save": "https://pdfix.net/user-guide-action-manager/",
+  "CustomActionDialog_reset": "https://pdfix.net/user-guide-action-manager/",
+  "CustomActionDialog_move_up": "https://pdfix.net/user-guide-action-manager/",
+  "CustomActionDialog_move_down": "https://pdfix.net/user-guide-action-manager/",
+  "CustomActionDialog_add": "https://pdfix.net/user-guide-action-manager/",
+  "CustomActionDialog_remove": "https://pdfix.net/user-guide-action-manager/",
+  "CustomActionDialog_export": "https://pdfix.net/user-guide-action-manager/",
+
+  // ImportActionsDialog
+  "ImportActionsDialog_add": "https://pdfix.net/user-guide-external-actions/",
+  "ImportActionsDialog_remove": "https://pdfix.net/user-guide-external-actions/",
+
+  // DocView Ribbon
+  "kPvActionFind": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionPrevPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionNextPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionPrevView": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionNextView": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionFit": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionFitWidth": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionZoomIn": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionZoomOut": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionToolDefault": "https://pdfix.net/user-guide-selection-tools/",
+  "kPvActionToolObject": "https://pdfix.net/user-guide-selection-tools/",
+  "kPvActionToolTable": "https://pdfix.net/user-guide-table-tool/",
+
+  // Bookmark panel
+  "Bookmarks_panel": "https://pdfix.net/user-guide-bookmarks/#Bookmarks-panel",
+  "kPvActionSelBmkAdd": "https://pdfix.net/user-guide-bookmarks/#Add-Bookmark",
+  "kPvActionProperties_bmk": "https://pdfix.net/user-guide-bookmarks/#Bookmark-Properties",
+  "kPvActionSelEdit_bmk": "https://pdfix.net/user-guide-bookmarks/#Edit-Bookmark",
+  "kPvActionSelDelete_bmk": "https://pdfix.net/user-guide-bookmarks/#Delete-Bookmark",
+  "kPvActionBmkAddFromTags": "https://pdfix.net/user-guide-bookmarks/#Create-Bookmarks",
+  "kPvActionBmkRootDelete": "https://pdfix.net/user-guide-bookmarks/#Delete-Bookmarks",
+
+  "Thumbnails_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  "Content_panel": "https://pdfix.net/user-guide-not-supported/",
+  
+  // Annotation DocView
+  "Annotations_panel": "https://pdfix.net/user-guide-annotations/#Annotations-panel",
+  "kPvActionDocSetTabsKeys": "https://pdfix.net/user-guide-annotations/#Set-Tab-Order",
+  "kPvActionDocTagAnnot": "https://pdfix.net/user-guide-annotations/#Tag-Annotations",
+  "kPvActionDocSetAnnotsContents": "https://pdfix.net/user-guide-annotations/#Set-Contents",
+  "kPvActionDocFlattenAnnots": "https://pdfix.net/user-guide-annotations/#Flatten-Annotations",
+  "kPvActionDocCreateWebLinks": "https://pdfix.net/user-guide-annotations/#Create-Web-Links",
+  "kPvActionDocDeleteAnnots": "https://pdfix.net/user-guide-annotations/#Delete-Annotations",
+  "kPvActionDocFixMediaClipKeys": "https://pdfix.net/user-guide-annotations/#Fix-Media-Clip-Keys",
+
+  "Tags_panel": "https://pdfix.net/user-guide-tags/",
+
+  "LayoutRecognition_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  "Fonts_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  "Template_panel": "https://pdfix.net/user-guide-template/",
+
+  "Accessibility_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  "Validation_panel": "https://pdfix.net/user-guide-validation/",
+
+  "Conversion_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  "Format_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  "Browser_panel": "https://pdfix.net/user-guide-browser/",
+
+  "Destinations_panel": "https://pdfix.net/user-guide-destinations/",
+};
+
+function pdfix_doHelpQuery() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get("q");
+  if (query && pdfix_queries[query]) {
+    window.location.href = pdfix_queries[query];
+  }
+  else {
+    window.location.href = "https://pdfix.net/user-guide-not-supported/?q=" + query;
+  }
+}
+
+pdfix_doHelpQuery();
+</script>
