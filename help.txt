@@ -2,14 +2,12 @@
 const pdfix_queries = {
   "not_found": "https://pdfix.net/user-guide-not-supported/",
 
-
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Not processed yet
   "kPvActionClearRecentDoc": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSave": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSaveAs": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionSaveMetaData": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionSaveTemplate": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionSaveAsTemplate": "https://pdfix.net/user-guide-not-supported/",
+  
   "kPvActionSaveValidation": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSaveValidationReport": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionClose": "https://pdfix.net/user-guide-not-supported/",
@@ -29,10 +27,26 @@ const pdfix_queries = {
   "kPvActionQuickFix": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionValidationShow": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelValidationFix": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionFind": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionFindPrev": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionFindNext": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionPrint": "https://pdfix.net/user-guide-not-supported/",
+
+
+
+
+
+  "kPvActionSelCopy": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelCopyWithFormatting": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelCut": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelPaste": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelEdit": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelDelete": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelSelectAll": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelDeselectAll": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelMoveUp": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelMoveDown": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelPasteChild": "https://pdfix.net/user-guide-not-supported/",
+
+
+
+
 
   "kPvActionSelFindChar": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelFindContent": "https://pdfix.net/user-guide-not-supported/",
@@ -41,11 +55,17 @@ const pdfix_queries = {
   "kPvActionProperties": "https://pdfix.net/user-guide-not-supported/",
 
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // PDFix Desktop Product links
   "product_change_log": "https://pdfix.net/pdfix-desktop-changelog/",
   "product_upgrade": "https://pdfix.net/pricing/",
   "kPvActionAbout": "https://pdfix.net/",
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Preferences
+  "kPvActionSettings": "https://pdfix.net/user-guide-preferences/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // App View
   "kPvActionAddTab": "https://pdfix.net/user-guide-workspace/#Application-view",
   "kPvActionRemoveTab": "https://pdfix.net/user-guide-workspace/#Application-view",
@@ -65,6 +85,7 @@ const pdfix_queries = {
   "kPvActionViewPac": "https://pdfix.net/user-guide-workspace/#Application-view",
   "kPvActionViewPdfua": "https://pdfix.net/user-guide-workspace/#Application-view",
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Doc View
   "kPvActionDocHome": "https://pdfix.net/user-guide-workspace/#Document-view",
   "kPvActionFirstPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
@@ -86,7 +107,14 @@ const pdfix_queries = {
   "kPvActionToolTag": "https://pdfix.net/user-guide-tag-tool/",
   "kPvActionToolHand": "https://pdfix.net/user-guide-selection-tools/",
   "kPvActionToolTable": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionFind": "https://pdfix.net/user-guide-workspace/#Page-navigation",
 
+  "kPvActionFind": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionFindPrev": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionFindNext": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionPrint": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Tag Tool
   "kPvActionToolTag": "https://pdfix.net/user-guide-tag-tool",
   "kPvActionShowAllTags": "https://pdfix.net/user-guide-tag-tool/#Tag-View",
@@ -107,6 +135,7 @@ const pdfix_queries = {
   "kPvActionSelSelectAssociated": "https://pdfix.net/user-guide-tag-tool/#Edit-Table-Headers",
   "kPvActionSelSelectAsMoveAfter": "hhttps://pdfix.net/user-guide-tag-tool/#Move-Tag",
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Template general
   "pdf_template": "https://pdfix.net/user-guide-template/",
   "pdf_template_settings": "https://pdfix.net/user-guide-template/#Settings",
@@ -144,18 +173,230 @@ const pdfix_queries = {
   "pdf_template_tag_update": "https://pdfix.net/user-guide-template/#tag_update",  
   "pdf_template_annot_update": "https://pdfix.net/user-guide-template/#annot_update",  
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Template panel
+  "Template_panel": "https://pdfix.net/user-guide-template/",
+  "kPvActionNewTemplate": "https://pdfix.net/user-guide-template/",
+  "kPvActionOpenTemplate": "https://pdfix.net/user-guide-template/",
+  "kPvActionOpenTemplateRecent": "https://pdfix.net/user-guide-template/",
+  "kPvActionMergeTemplate": "https://pdfix.net/user-guide-template/",
+  "kPvActionClearTemplate": "https://pdfix.net/user-guide-template/",
+  "kPvActionTemplateAdd": "https://pdfix.net/user-guide-template/",
+  "kPvActionTemplateRaw": "https://pdfix.net/user-guide-template/",
+  "kPvActionTemplateDisabledNode": "https://pdfix.net/user-guide-template/",
+  "kPvActionTemplateResetValue": "https://pdfix.net/user-guide-template/",
+
+  "kPvActionSelPreflight": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelPreflightMerge": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionDocPreflight": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionDocPreflightMerge": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSaveMetaData": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSaveTemplate": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSaveAsTemplate": "https://pdfix.net/user-guide-not-supported/",
+
+  "kPvActionSelTemplateAsHeader": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsFooter": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsArtifact": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsH1": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsH2": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsH3": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsH4": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsL1": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsL2": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelTemplateAsL3": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Bookmark panel
+  "Bookmarks_panel": "https://pdfix.net/user-guide-bookmarks/#Bookmarks-panel",
+  "kPvActionSelBmkAdd": "https://pdfix.net/user-guide-bookmarks/#Add-Bookmark",
+  "kPvActionProperties_bmk": "https://pdfix.net/user-guide-bookmarks/#Bookmark-Properties",
+  "kPvActionSelEdit_bmk": "https://pdfix.net/user-guide-bookmarks/#Edit-Bookmark",
+  "kPvActionSelDelete_bmk": "https://pdfix.net/user-guide-bookmarks/#Delete-Bookmark",
+  "kPvActionBmkAddFromTags": "https://pdfix.net/user-guide-basic-actions/#create-bookmarks",
+  "kPvActionBmkRootDelete": "https://pdfix.net/user-guide-basic-actions/#clear-document-structure",
+  
+  "kPvActionSelBmkAdd": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Thumbnail panel
+  "Thumbnails_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  "kPvActionDocRotatePages": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelRotatePages": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Content Panel
+  "Content_panel": "https://pdfix.net/user-guide-content/#Content-panel",
+  "kPvActionDocFlattenFormXObjects": "https://pdfix.net/user-guide-basic-actions/#flatten-form-xobjects",
+  "kPvActionSelFlattenFormXObjects": "https://pdfix.net/user-guide-basic-actions/#flatten-form-xobjects",
+  "kPvActionDocClearMcStructure": "https://pdfix.net/user-guide-basic-actions/#remove-content-marks",
+  "kPvActionSelClearMcStructure": "https://pdfix.net/user-guide-basic-actions/#remove-content-marks",
+  "kPvActionDocArtifactUntagged": "https://pdfix.net/user-guide-basic-actions/#artifact-content",
+  "kPvActionSelArtifactUntagged": "https://pdfix.net/user-guide-basic-actions/#artifact-content",
+  "kPvActionShowArtifacts": "https://pdfix.net/user-guide-content/#Show-Artifacts",
+  "kPvActionShowUnmarkedContent": "https://pdfix.net/user-guide-content/#Show-Unmarked-Content",
+  "kPvActionShowMc": "https://pdfix.net/user-guide-content/#Show-Tagged-Content",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Annotation Panel
+  "Annotations_panel": "https://pdfix.net/user-guide-annotations/#Annotations-panel",
+  "kPvActionDocSetTabsKeys": "https://pdfix.net/user-guide-basic-actions/#set-tab-order",
+  "kPvActionDocTagAnnot": "https://pdfix.net/user-guide-basic-actions/#tag-annotations",
+  "kPvActionSelTagAnnot": "https://pdfix.net/user-guide-basic-actions/#tag-annotations",
+  "kPvActionDocSetAnnotsContents": "https://pdfix.net/user-guide-basic-actions/#set-contents",
+  "kPvActionSelSetAnnotsContents": "https://pdfix.net/user-guide-basic-actions/#set-contents",
+  "kPvActionDocFlattenAnnots": "https://pdfix.net/user-guide-basic-actions/#flatten-annotations",
+  "kPvActionSelFlattenAnnots": "https://pdfix.net/user-guide-basic-actions/#flatten-annotations",
+  "kPvActionDocCreateWebLinks": "https://pdfix.net/user-guide-basic-actions/#create-web-links",
+  "kPvActionSelCreateWebLinks": "https://pdfix.net/user-guide-basic-actions/#create-web-links",
+  "kPvActionDocDeleteAnnots": "https://pdfix.net/user-guide-basic-actions/#delete-annotations",
+  "kPvActionDocFixMediaClipKeys": "https://pdfix.net/user-guide-basic-actions/#fix-media-clip",
+
+  "kPvActionSelCreateLink": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelCreateLinkFromClipboard": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelCreateHighlight": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelCreateStrikethrough": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////  
+  // PDF Actions
+  "kPvActionSelActionAdd": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelActionAddGoTo": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelActionAddUri": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////  
+  "Tags_panel": "https://pdfix.net/user-guide-tags/",
+  "kPvActionDocApplyStandardTags": "https://pdfix.net/user-guide-basic-actions/#apply-standard-tags",
+  "kPvActionSelApplyStandardTags": "https://pdfix.net/user-guide-basic-actions/#apply-standard-tags",
+  "kPvActionDocDeleteTags": "https://pdfix.net/user-guide-basic-actions/#delete-tags",
+  "kPvActionSelDeleteTags": "https://pdfix.net/user-guide-basic-actions/#delete-tags",
+  "kPvActionDocFixDocumentTag": "https://pdfix.net/user-guide-basic-actions/#fix-document-tag",
+  "kPvActionDocFixHeadings": "https://pdfix.net/user-guide-basic-actions/#fix-headings",
+  "kPvActionDocFixListTag": "https://pdfix.net/user-guide-basic-actions/#fix-list-tag",
+  "kPvActionSelFixListTag": "https://pdfix.net/user-guide-basic-actions/#fix-list-tag",
+  "kPvActionDocFixPlacement": "https://pdfix.net/user-guide-basic-actions/#fix-placement",
+  "kPvActionSelFixPlacement": "https://pdfix.net/user-guide-basic-actions/#fix-placement",
+  "kPvActionDocRemoveTagData": "https://pdfix.net/user-guide-basic-actions/#remove-tag-properties",
+  "kPvActionSelRemoveTagData": "https://pdfix.net/user-guide-basic-actions/#remove-tag-properties",
+  "kPvActionDocRenameTags": "https://pdfix.net/user-guide-basic-actions/#rename-tags",
+  "kPvActionSelRenameTags": "https://pdfix.net/user-guide-basic-actions/#rename-tags",
+  "kPvActionDocSetTagActual": "https://pdfix.net/user-guide-basic-actions/#set-actual-text",
+  "kPvActionSelSetTagActual": "https://pdfix.net/user-guide-basic-actions/#set-actual-text",
+  "kPvActionDocSetTagAlt": "https://pdfix.net/user-guide-basic-actions/#set-alternate-description",
+  "kPvActionSelSetTagAlt": "https://pdfix.net/user-guide-basic-actions/#set-alternate-description",
+  "kPvActionDocFixStructureSpaces": "https://pdfix.net/user-guide-basic-actions/#fix-spaces",
+  "kPvActionSelFixStructureSpaces": "https://pdfix.net/user-guide-basic-actions/#fix-spaces",
+  "kPvActionDocSetTableSummary": "https://pdfix.net/user-guide-basic-actions/#set-table-summary",
+  "kPvActionSelSetTableSummary": "https://pdfix.net/user-guide-basic-actions/#set-table-summary",
+  "kPvActionDocSetTagAttributes": "https://pdfix.net/user-guide-basic-actions/#set-tag-attributes",
+  "kPvActionSelSetTagAttributes": "https://pdfix.net/user-guide-basic-actions/#set-tag-attributes",
+  "kPvActionDocSetTagBBox": "https://pdfix.net/user-guide-basic-actions/#set-tag-bbox",
+  "kPvActionSelSetTagBBox": "https://pdfix.net/user-guide-basic-actions/#set-tag-bbox",
+  "kPvActionDocSetTagId": "https://pdfix.net/user-guide-basic-actions/#set-tag-id",
+  "kPvActionSelSetTagId": "https://pdfix.net/user-guide-basic-actions/#set-tag-id",
+  "kPvActionDocCloneXObject": "https://pdfix.net/user-guide-basic-actions/#clone-xobjects",
+  "kPvActionSelCloneXObject": "https://pdfix.net/user-guide-basic-actions/#clone-xobjects",
+  "kPvActionDocFixTableTag": "https://pdfix.net/user-guide-basic-actions/#fix-table-tag",
+  "kPvActionSelFixTableTag": "https://pdfix.net/user-guide-basic-actions/#fix-table-tag",
+  "kPvActionDocSetTableHeaders": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
+  "kPvActionSelSetTableHeaders": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
+  "kPvActionSelStructTreeAdd": "https://pdfix.net/user-guide-tags/#Tags-panel-manual-tagging",
+  "kPvActionSelStructTreeEditTag": "https://pdfix.net/user-guide-tags/#Tags-panel-manual-tagging",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "LayoutRecognition_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "Fonts_panel": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionDocEmbedFonts": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelFontEmbed": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionDocAddMissingUnicode": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelAddMissingUnicode": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionDocFontReplace": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelFontReplace": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "Accessibility_panel": "https://pdfix.net/user-guide-accessibility/#Accessibility-panel",
+  "kPvActionMakeAccessible": "https://pdfix.net/user-guide-workflow-for-creating-an-accessible-pdf/#Make-Accessible",
+  "kPvActionAddTags": "https://pdfix.net/user-guide-basic-actions/#autotag",
+  "kPvActionDeleteDocStructure": "https://pdfix.net/user-guide-basic-actions/#clear-document-structure",
+  "kPvActionUpdateParentTree": "https://pdfix.net/user-guide-basic-actions/#fix-parent-tree",
+  "kPvActionUpdateIdTree": "https://pdfix.net/user-guide-basic-actions/#fix-id-tree",
+  "kPvActionSetPdfStandard": "https://pdfix.net/user-guide-basic-actions/#set-pdf/ua-standard",
+  "kPvActionSetPdfVersion": "https://pdfix.net/user-guide-basic-actions/#set-pdf-version",
+  "kPvActionSetLanguage": "https://pdfix.net/user-guide-basic-actions/#set-language",
+  "kPvActionSetTitle": "https://pdfix.net/user-guide-basic-actions/#set-titles",
+  "kPvActionSetDisplayDocTitle": "https://pdfix.net/user-guide-basic-actions/#fix-display-document-title",
+  "kPvActionSetDocInfo": "https://pdfix.net/user-guide-basic-actions/#set-document-properties",
+  "kPvActionSetSuspectValue": "https://pdfix.net/user-guide-basic-actions/#set-suspect-value",
+  "kPvActionFixOC": "https://pdfix.net/user-guide-basic-actions/#fix-optional-content",
+  "kPvActionRemoveTagMapping": "https://pdfix.net/user-guide-basic-actions/#remove-standard-tags-mapping",
+  "kPvActionRoleMapCreate": "https://pdfix.net/user-guide-accessibility/#Role-Map",
+  "kPvActionRoleMapDelete": "https://pdfix.net/user-guide-accessibility/#Role-Map",
+  "kPvActionClassMapCreate": "https://pdfix.net/user-guide-accessibility/#Class-Map",
+  "kPvActionClassMapDelete": "https://pdfix.net/user-guide-accessibility/#Class-Map",
+
+  "kPvActionSelAddToTag": "https://pdfix.net/user-guide-selection-tools/",
+  "kPvActionSelTagAs": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsP": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsH1": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsH2": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsH3": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsH4": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsH5": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsH6": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsNote": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsFigure": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsFormula": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsCaption": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTable": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsL": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelMarkAsHeader": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelMarkAsFooter": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelArtifact": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsAnnot": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsArt": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsLink": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsBibEntry": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsBlockQuote": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "Validation_panel": "https://pdfix.net/user-guide-validation/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "Conversion_panel": "https://pdfix.net/user-guide-conversion/",
+  "kPvActionSelHtml": "https://pdfix.net/user-guide-conversion/#Export-Selection",
+  "kPvActionSelHtmlFixed": "https://pdfix.net/user-guide-conversion/#Export-Selection",
+  "kPvActionSelSnapshot": "https://pdfix.net/user-guide-conversion/#Snapshot",
+  "kPvActionSelCopyWithFormatting": "https://pdfix.net/user-guide-conversion/#Copy-with-Formatting",
+  "kPvActionDocHtml": "https://pdfix.net/user-guide-conversion/#Convert-to-HTML",
+  "kPvActionDocHtmlFixed": "https://pdfix.net/user-guide-conversion/#Convert-to-Fixed-HTML",
+  "kPvActionDocDerivation": "https://pdfix.net/user-guide-conversion/#Derivation",
+  "kPvActionDocJson": "https://pdfix.net/user-guide-basic-actions/#pdf-to-json",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "Format_panel": "https://pdfix.net/user-guide-not-supported/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "Browser_panel": "https://pdfix.net/user-guide-browser/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  "Destinations_panel": "https://pdfix.net/user-guide-destinations/",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Action custom dialog ui components 
   "pdf_action_tag_names": "https://pdfix.net/user-guide-tags-define/",
   "pdf_action_annot_types": "https://pdfix.net/user-guide-annotations-define/",
   "pdf_action_objects_types": "https://pdfix.net/user-guide-content-define/",
 
-  // Special actions 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Pipeline actions 
   "pdf_action_default": "https://pdfix.net/user-guide-action-manager/#Default-Actions",
   "pdf_action_custom": "https://pdfix.net/user-guide-action-manager/#Custom-Actions",
   "pdf_action_extern": "https://pdfix.net/actions-marketplace/",
   "pdf_action_validation": "https://pdfix.net/user-guide-basic-actions/#validation",
   "pdf_action_validation_report": "https://pdfix.net/user-guide-basic-actions/#validation",
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Base actions
   "pdf_action_set_pdf_ua_standard": "https://pdfix.net/user-guide-basic-actions/#set_pdf_ua_standard",
   "pdf_action_set_suspect_value": "https://pdfix.net/user-guide-basic-actions/#set_suspect_value",
@@ -198,6 +439,7 @@ const pdfix_queries = {
   "pdf_action_fix_structure_spaces": "https://pdfix.net/user-guide-basic-actions/#fix_structure_spaces",
   "pdf_action_fix_headings": "https://pdfix.net/user-guide-basic-actions/#fix_headings",
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // PipelineActionsDialog
   "PipelineActionsDialog_add": "https://pdfix.net/user-guide-action-manager/",
   "PipelineActionsDialog_edit": "https://pdfix.net/user-guide-action-manager/",
@@ -209,6 +451,7 @@ const pdfix_queries = {
   "PipelineActionsDialog_import_extern": "https://pdfix.net/user-guide-action-manager/",
   "PipelineActionsDialog_clone": "https://pdfix.net/user-guide-action-manager/",
   
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // CustomActionDialog
   "CustomActionDialog_save": "https://pdfix.net/user-guide-action-manager/",
   "CustomActionDialog_reset": "https://pdfix.net/user-guide-action-manager/",
@@ -218,152 +461,11 @@ const pdfix_queries = {
   "CustomActionDialog_remove": "https://pdfix.net/user-guide-action-manager/",
   "CustomActionDialog_export": "https://pdfix.net/user-guide-action-manager/",
 
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
   // ImportActionsDialog
   "ImportActionsDialog_add": "https://pdfix.net/user-guide-external-actions/",
   "ImportActionsDialog_remove": "https://pdfix.net/user-guide-external-actions/",
 
-  // DocView Ribbon
-  "kPvActionFind": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionPrevPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionNextPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionPrevView": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionNextView": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionFit": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionFitWidth": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionZoomIn": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionZoomOut": "https://pdfix.net/user-guide-workspace/#Page-navigation",
-  "kPvActionToolDefault": "https://pdfix.net/user-guide-selection-tools/",
-  "kPvActionToolObject": "https://pdfix.net/user-guide-selection-tools/",
-  "kPvActionToolTable": "https://pdfix.net/user-guide-table-tool/",
-
-  // Bookmark panel
-  "Bookmarks_panel": "https://pdfix.net/user-guide-bookmarks/#Bookmarks-panel",
-  "kPvActionSelBmkAdd": "https://pdfix.net/user-guide-bookmarks/#Add-Bookmark",
-  "kPvActionProperties_bmk": "https://pdfix.net/user-guide-bookmarks/#Bookmark-Properties",
-  "kPvActionSelEdit_bmk": "https://pdfix.net/user-guide-bookmarks/#Edit-Bookmark",
-  "kPvActionSelDelete_bmk": "https://pdfix.net/user-guide-bookmarks/#Delete-Bookmark",
-  "kPvActionBmkAddFromTags": "https://pdfix.net/user-guide-basic-actions/#create-bookmarks",
-  "kPvActionBmkRootDelete": "https://pdfix.net/user-guide-basic-actions/#clear-document-structure",
-
-  // Thumbnail panel
-  "Thumbnails_panel": "https://pdfix.net/user-guide-not-supported/",
-
-  // Content Panel
-  "Content_panel": "https://pdfix.net/user-guide-content/#Content-panel",
-  "kPvActionDocFlattenFormXObjects": "https://pdfix.net/user-guide-basic-actions/#flatten-form-xobjects",
-  "kPvActionSelFlattenFormXObjects": "https://pdfix.net/user-guide-basic-actions/#flatten-form-xobjects",
-  "kPvActionDocClearMcStructure": "https://pdfix.net/user-guide-basic-actions/#remove-content-marks",
-  "kPvActionSelClearMcStructure": "https://pdfix.net/user-guide-basic-actions/#remove-content-marks",
-  "kPvActionDocArtifactUntagged": "https://pdfix.net/user-guide-basic-actions/#artifact-content",
-  "kPvActionSelArtifactUntagged": "https://pdfix.net/user-guide-basic-actions/#artifact-content",
-  "kPvActionShowArtifacts": "https://pdfix.net/user-guide-content/#Show-Artifacts",
-  "kPvActionShowUnmarkedContent": "https://pdfix.net/user-guide-content/#Show-Unmarked-Content",
-  "kPvActionShowMc": "https://pdfix.net/user-guide-content/#Show-Tagged-Content",
-
-  // Annotation Panel
-  "Annotations_panel": "https://pdfix.net/user-guide-annotations/#Annotations-panel",
-  "kPvActionDocSetTabsKeys": "https://pdfix.net/user-guide-basic-actions/#set-tab-order",
-  "kPvActionDocTagAnnot": "https://pdfix.net/user-guide-basic-actions/#tag-annotations",
-  "kPvActionSelTagAnnot": "https://pdfix.net/user-guide-basic-actions/#tag-annotations",
-  "kPvActionDocSetAnnotsContents": "https://pdfix.net/user-guide-basic-actions/#set-contents",
-  "kPvActionSelSetAnnotsContents": "https://pdfix.net/user-guide-basic-actions/#set-contents",
-  "kPvActionDocFlattenAnnots": "https://pdfix.net/user-guide-basic-actions/#flatten-annotations",
-  "kPvActionSelFlattenAnnots": "https://pdfix.net/user-guide-basic-actions/#flatten-annotations",
-  "kPvActionDocCreateWebLinks": "https://pdfix.net/user-guide-basic-actions/#create-web-links",
-  "kPvActionSelCreateWebLinks": "https://pdfix.net/user-guide-basic-actions/#create-web-links",
-  "kPvActionDocDeleteAnnots": "https://pdfix.net/user-guide-basic-actions/#delete-annotations",
-  "kPvActionDocFixMediaClipKeys": "https://pdfix.net/user-guide-basic-actions/#fix-media-clip",
-
-  "Tags_panel": "https://pdfix.net/user-guide-tags/",
-  "kPvActionDocApplyStandardTags": "https://pdfix.net/user-guide-basic-actions/#apply-standard-tags",
-  "kPvActionSelApplyStandardTags": "https://pdfix.net/user-guide-basic-actions/#apply-standard-tags",
-  "kPvActionDocDeleteTags": "https://pdfix.net/user-guide-basic-actions/#delete-tags",
-  "kPvActionSelDeleteTags": "https://pdfix.net/user-guide-basic-actions/#delete-tags",
-  "kPvActionDocFixDocumentTag": "https://pdfix.net/user-guide-basic-actions/#fix-document-tag",
-  "kPvActionDocFixHeadings": "https://pdfix.net/user-guide-basic-actions/#fix-headings",
-  "kPvActionDocFixListTag": "https://pdfix.net/user-guide-basic-actions/#fix-list-tag",
-  "kPvActionSelFixListTag": "https://pdfix.net/user-guide-basic-actions/#fix-list-tag",
-  "kPvActionDocFixPlacement": "https://pdfix.net/user-guide-basic-actions/#fix-placement",
-  "kPvActionSelFixPlacement": "https://pdfix.net/user-guide-basic-actions/#fix-placement",
-  "kPvActionDocRemoveTagData": "https://pdfix.net/user-guide-basic-actions/#remove-tag-properties",
-  "kPvActionSelRemoveTagData": "https://pdfix.net/user-guide-basic-actions/#remove-tag-properties",
-  "kPvActionDocRenameTags": "https://pdfix.net/user-guide-basic-actions/#rename-tags",
-  "kPvActionSelRenameTags": "https://pdfix.net/user-guide-basic-actions/#rename-tags",
-  "kPvActionDocSetTagActual": "https://pdfix.net/user-guide-basic-actions/#set-actual-text",
-  "kPvActionSelSetTagActual": "https://pdfix.net/user-guide-basic-actions/#set-actual-text",
-  "kPvActionDocSetTagAlt": "https://pdfix.net/user-guide-basic-actions/#set-alternate-description",
-  "kPvActionSelSetTagAlt": "https://pdfix.net/user-guide-basic-actions/#set-alternate-description",
-  "kPvActionDocFixStructureSpaces": "https://pdfix.net/user-guide-basic-actions/#fix-spaces",
-  "kPvActionSelFixStructureSpaces": "https://pdfix.net/user-guide-basic-actions/#fix-spaces",
-  "kPvActionDocSetTableSummary": "https://pdfix.net/user-guide-basic-actions/#set-table-summary",
-  "kPvActionSelSetTableSummary": "https://pdfix.net/user-guide-basic-actions/#set-table-summary",
-  "kPvActionDocSetTagAttributes": "https://pdfix.net/user-guide-basic-actions/#set-tag-attributes",
-  "kPvActionSelSetTagAttributes": "https://pdfix.net/user-guide-basic-actions/#set-tag-attributes",
-  "kPvActionDocSetTagBBox": "https://pdfix.net/user-guide-basic-actions/#set-tag-bbox",
-  "kPvActionSelSetTagBBox": "https://pdfix.net/user-guide-basic-actions/#set-tag-bbox",
-  "kPvActionDocSetTagId": "https://pdfix.net/user-guide-basic-actions/#set-tag-id",
-  "kPvActionSelSetTagId": "https://pdfix.net/user-guide-basic-actions/#set-tag-id",
-  "kPvActionDocCloneXObject": "https://pdfix.net/user-guide-basic-actions/#clone-xobjects",
-  "kPvActionSelCloneXObject": "https://pdfix.net/user-guide-basic-actions/#clone-xobjects",
-  "kPvActionDocFixTableTag": "https://pdfix.net/user-guide-basic-actions/#fix-table-tag",
-  "kPvActionSelFixTableTag": "https://pdfix.net/user-guide-basic-actions/#fix-table-tag",
-  "kPvActionDocSetTableHeaders": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionSelSetTableHeaders": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-
-  "LayoutRecognition_panel": "https://pdfix.net/user-guide-not-supported/",
-
-  "Fonts_panel": "https://pdfix.net/user-guide-not-supported/",
-
-  "Template_panel": "https://pdfix.net/user-guide-template/",
-  "kPvActionNewTemplate": "https://pdfix.net/user-guide-template/",
-  "kPvActionOpenTemplate": "https://pdfix.net/user-guide-template/",
-  "kPvActionOpenTemplateRecent": "https://pdfix.net/user-guide-template/",
-  "kPvActionMergeTemplate": "https://pdfix.net/user-guide-template/",
-  "kPvActionClearTemplate": "https://pdfix.net/user-guide-template/",
-  "kPvActionTemplateAdd": "https://pdfix.net/user-guide-template/",
-  "kPvActionTemplateRaw": "https://pdfix.net/user-guide-template/",
-  "kPvActionTemplateDisabledNode": "https://pdfix.net/user-guide-template/",
-  "kPvActionTemplateResetValue": "https://pdfix.net/user-guide-template/",
-
-  "Accessibility_panel": "https://pdfix.net/user-guide-accessibility/#Accessibility-panel",
-  "kPvActionMakeAccessible": "https://pdfix.net/user-guide-workflow-for-creating-an-accessible-pdf/#Make-Accessible",
-  "kPvActionAddTags": "https://pdfix.net/user-guide-basic-actions/#autotag",
-  "kPvActionDeleteDocStructure": "https://pdfix.net/user-guide-basic-actions/#clear-document-structure",
-  "kPvActionUpdateParentTree": "https://pdfix.net/user-guide-basic-actions/#fix-parent-tree",
-  "kPvActionUpdateIdTree": "https://pdfix.net/user-guide-basic-actions/#fix-id-tree",
-  "kPvActionSetPdfStandard": "https://pdfix.net/user-guide-basic-actions/#set-pdf/ua-standard",
-  "kPvActionSetPdfVersion": "https://pdfix.net/user-guide-basic-actions/#set-pdf-version",
-  "kPvActionSetLanguage": "https://pdfix.net/user-guide-basic-actions/#set-language",
-  "kPvActionSetTitle": "https://pdfix.net/user-guide-basic-actions/#set-titles",
-  "kPvActionSetDisplayDocTitle": "https://pdfix.net/user-guide-basic-actions/#fix-display-document-title",
-  "kPvActionSetDocInfo": "https://pdfix.net/user-guide-basic-actions/#set-document-properties",
-  "kPvActionSetSuspectValue": "https://pdfix.net/user-guide-basic-actions/#set-suspect-value",
-  "kPvActionFixOC": "https://pdfix.net/user-guide-basic-actions/#fix-optional-content",
-  "kPvActionRemoveTagMapping": "https://pdfix.net/user-guide-basic-actions/#remove-standard-tags-mapping",
-  "kPvActionRoleMapCreate": "https://pdfix.net/user-guide-accessibility/#Role-Map",
-  "kPvActionRoleMapDelete": "https://pdfix.net/user-guide-accessibility/#Role-Map",
-  "kPvActionClassMapCreate": "https://pdfix.net/user-guide-accessibility/#Class-Map",
-  "kPvActionClassMapDelete": "https://pdfix.net/user-guide-accessibility/#Class-Map",
-
-  "Validation_panel": "https://pdfix.net/user-guide-validation/",
-
-  "Conversion_panel": "https://pdfix.net/user-guide-conversion/",
-  "kPvActionSelHtml": "https://pdfix.net/user-guide-conversion/#Export-Selection",
-  "kPvActionSelHtmlFixed": "https://pdfix.net/user-guide-conversion/#Export-Selection",
-  "kPvActionSelSnapshot": "https://pdfix.net/user-guide-conversion/#Snapshot",
-  "kPvActionSelCopyWithFormatting": "https://pdfix.net/user-guide-conversion/#Copy-with-Formatting",
-  "kPvActionDocHtml": "https://pdfix.net/user-guide-conversion/#Convert-to-HTML",
-  "kPvActionDocHtmlFixed": "https://pdfix.net/user-guide-conversion/#Convert-to-Fixed-HTML",
-  "kPvActionDocDerivation": "https://pdfix.net/user-guide-conversion/#Derivation",
-  "kPvActionDocJson": "https://pdfix.net/user-guide-basic-actions/#pdf-to-json",
-
-  "Format_panel": "https://pdfix.net/user-guide-not-supported/",
-
-  "Browser_panel": "https://pdfix.net/user-guide-browser/",
-
-  "Destinations_panel": "https://pdfix.net/user-guide-destinations/",
-
-  "kPvActionSettings": "https://pdfix.net/user-guide-preferences/",
 };
 
 function pdfix_doHelpQuery() {
