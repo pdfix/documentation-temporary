@@ -265,14 +265,14 @@ const pdfix_queries = {
   "Validation_panel": "https://pdfix.net/user-guide-validation/",
 
   "Conversion_panel": "https://pdfix.net/user-guide-conversion/",
-  "kPvActionSelHtml": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionSelHtmlFixed": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionSelSnapshot": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionSelCopyWithFormatting": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionDocHtml": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionDocHtmlFixed": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionDocDerivation": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
-  "kPvActionDocJson": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
+  "kPvActionSelHtml": "https://pdfix.net/user-guide-conversion/#Export-Selection",
+  "kPvActionSelHtmlFixed": "https://pdfix.net/user-guide-conversion/#Export-Selection",
+  "kPvActionSelSnapshot": "https://pdfix.net/user-guide-conversion/#Snapshot",
+  "kPvActionSelCopyWithFormatting": "https://pdfix.net/user-guide-conversion/#Copy-with-Formatting",
+  "kPvActionDocHtml": "https://pdfix.net/user-guide-conversion/#Convert-to-HTML",
+  "kPvActionDocHtmlFixed": "https://pdfix.net/user-guide-conversion/#Convert-to-Fixed-HTML",
+  "kPvActionDocDerivation": "https://pdfix.net/user-guide-conversion/#Derivation",
+  "kPvActionDocJson": "https://pdfix.net/user-guide-basic-actions/#pdf-to-json",
 
   "Format_panel": "https://pdfix.net/user-guide-not-supported/",
 
