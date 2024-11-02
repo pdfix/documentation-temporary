@@ -10,8 +10,22 @@ const pdfix_queries = {
   "kPvActionProperties": "https://pdfix.net/user-guide-tags/",
 
   // App View
-  "kPvActionProperties": "https://pdfix.net/user-guide-workspace/#Application-view",
-  
+  "kPvActionAddTab": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionRemoveTab": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionRenameTab": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionNextTab": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionPrevTab": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionSortFiles": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionAddFiles": "https://pdfix.net/user-guide-workspace/#Add-and-remove-files",
+  "kPvActionManageActions": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionRunAction": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionCancelBatch": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionCancelAllBatches": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionGetDocInfo": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionViewFiles": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionViewPac": "https://pdfix.net/user-guide-workspace/#Application-view",
+  "kPvActionViewPdfua": "https://pdfix.net/user-guide-workspace/#Application-view",
+
   // Doc View
   "kPvActionFirstPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
   "kPvActionPrevPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
