@@ -8,30 +8,17 @@ const pdfix_queries = {
   "kPvActionSave": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSaveAs": "https://pdfix.net/user-guide-not-supported/",
   
-  "kPvActionSaveValidation": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionSaveValidationReport": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionClose": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionMinimize": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionMinimizeAll": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionBringToFront": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionCheckForUpdate": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionCheckForUpdate": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionDocumentProperties": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionValidationProfiles": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionLicense": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionUpgradeToPro": "https://pdfix.net/user-guide-not-supported/",
+
   "kPvActionImportActions": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionValidate": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionValidateWith": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionAutoFix": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionQuickFix": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionValidationShow": "https://pdfix.net/user-guide-not-supported/",
-  "kPvActionSelValidationFix": "https://pdfix.net/user-guide-not-supported/",
-
-
-
-
-
+  
   "kPvActionSelCopy": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelCopyWithFormatting": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelCut": "https://pdfix.net/user-guide-not-supported/",
@@ -44,22 +31,28 @@ const pdfix_queries = {
   "kPvActionSelMoveDown": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelPasteChild": "https://pdfix.net/user-guide-not-supported/",
 
-
-
-
+  "kPvActionCancel": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionHelp": "https://pdfix.net/user-guide-not-supported/",
 
   "kPvActionSelFindChar": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelFindContent": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelFindTag": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelFindAnnot": "https://pdfix.net/user-guide-not-supported/",
+  
   "kPvActionProperties": "https://pdfix.net/user-guide-not-supported/",
 
+  "kPvActionShowShortcuts": "https://pdfix.net/user-guide-not-supported/",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   // PDFix Desktop Product links
   "product_change_log": "https://pdfix.net/pdfix-desktop-changelog/",
   "product_upgrade": "https://pdfix.net/pricing/",
   "kPvActionAbout": "https://pdfix.net/",
+
+  "kPvActionCheckForUpdate": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionCheckForUpdate": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionLicense": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionUpgradeToPro": "https://pdfix.net/user-guide-not-supported/",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Preferences
@@ -109,10 +102,10 @@ const pdfix_queries = {
   "kPvActionToolTable": "https://pdfix.net/user-guide-table-tool",
   "kPvActionFind": "https://pdfix.net/user-guide-workspace/#Page-navigation",
 
-  "kPvActionFind": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionFindPrev": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionFindNext": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionPrint": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionDocumentProperties": "https://pdfix.net/user-guide-not-supported/",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Tag Tool
@@ -134,6 +127,28 @@ const pdfix_queries = {
   "kPvActionSelSelectAssociatedSimple": "https://pdfix.net/user-guide-tag-tool/#Edit-Table-Headers",
   "kPvActionSelSelectAssociated": "https://pdfix.net/user-guide-tag-tool/#Edit-Table-Headers",
   "kPvActionSelSelectAsMoveAfter": "hhttps://pdfix.net/user-guide-tag-tool/#Move-Tag",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Deafult Tool
+  "kPvActionShowLinks": "https://pdfix.net/user-guide-workspace/#Selection-tools",
+  "kPvActionShowWidgets": "https://pdfix.net/user-guide-workspace/#Selection-tools",
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////
+  // Table Tool
+  "kPvActionSelTableAddRow": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableAddColumn": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableRemoveRow": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableRemoveColumn": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableMergeCells": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableSplitCells": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableSetRowHeader": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableSetColHeader": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableClearHeader": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableAssignHeader": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableDeassignHeader": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableClose": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableProperties": "https://pdfix.net/user-guide-table-tool",
+  "kPvActionSelTableCellReindex": "https://pdfix.net/user-guide-table-tool",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   // Template general
@@ -301,6 +316,8 @@ const pdfix_queries = {
   "kPvActionSelSetTableHeaders": "https://pdfix.net/user-guide-basic-actions/#set-table-headers",
   "kPvActionSelStructTreeAdd": "https://pdfix.net/user-guide-tags/#Tags-panel-manual-tagging",
   "kPvActionSelStructTreeEditTag": "https://pdfix.net/user-guide-tags/#Tags-panel-manual-tagging",
+  "kPvActionShowMoveTarget": "https://pdfix.net/user-guide-tags/#Tags-panel-manual-tagging",
+  "kPvActionShowRoleMaps": "https://pdfix.net/user-guide-tags/#Tags-panel-manual-tagging",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   "LayoutRecognition_panel": "https://pdfix.net/user-guide-not-supported/",
@@ -313,6 +330,7 @@ const pdfix_queries = {
   "kPvActionSelAddMissingUnicode": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionDocFontReplace": "https://pdfix.net/user-guide-not-supported/",
   "kPvActionSelFontReplace": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionShowGlyphsWithoutChar": "https://pdfix.net/user-guide-not-supported/",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   "Accessibility_panel": "https://pdfix.net/user-guide-accessibility/#Accessibility-panel",
@@ -358,10 +376,54 @@ const pdfix_queries = {
   "kPvActionSelTagAsLink": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
   "kPvActionSelTagAsBibEntry": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
   "kPvActionSelTagAsBlockQuote": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsCode": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsDiv": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsDocument": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsForm": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsH": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsIndex": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsLBody": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsLI": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsLbl": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsNonStruct": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsPart": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsPrivate": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsQuote": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsRB": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsRP": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsRT": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsReference": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsRuby": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsSect": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsSpan": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTBody": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTD": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTFoot": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTH": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTHead": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTOC": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTOCI": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTR": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsWP": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsWT": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsWarichu": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsFENote": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsEm": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsAside": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsTitle": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsDocumentFragment": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsStrong": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
+  "kPvActionSelTagAsSub": "https://pdfix.net/user-guide-accessibility/#TagAs-view",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   "Validation_panel": "https://pdfix.net/user-guide-validation/",
-
+  
+  "kPvActionSaveValidation": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSaveValidationReport": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionValidationShow": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelValidationFix": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionValidationProfiles": "https://pdfix.net/user-guide-not-supported/",
+ 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   "Conversion_panel": "https://pdfix.net/user-guide-conversion/",
   "kPvActionSelHtml": "https://pdfix.net/user-guide-conversion/#Export-Selection",
@@ -378,6 +440,11 @@ const pdfix_queries = {
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   "Browser_panel": "https://pdfix.net/user-guide-browser/",
+  "kPvActionSelObjTreeAdd": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelObjTreeEdit": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelObjTreeEditStream": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelReload": "https://pdfix.net/user-guide-not-supported/",
+  "kPvActionSelObjTreeConvertDictToArray": "https://pdfix.net/user-guide-not-supported/",
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   "Destinations_panel": "https://pdfix.net/user-guide-destinations/",
