@@ -9,6 +9,30 @@ const pdfix_queries = {
   "kPvActionSelFindAnnot": "https://pdfix.net/user-guide-tags/",
   "kPvActionProperties": "https://pdfix.net/user-guide-tags/",
 
+  // App View
+  "kPvActionProperties": "https://pdfix.net/user-guide-workspace/#Application-view",
+  
+  // Doc View
+  "kPvActionFirstPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionPrevPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionNextPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionLastPage": "https://pdfix.net/user-guide-workspace/#Page-navigation",
+  "kPvActionZoomIn": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionZoomOut": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionRotateClockwise": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionRotateCounterClockwise": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionPrevView": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionNextView": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionFit": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionFitWidth": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionUndo": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionRedo": "https://pdfix.net/user-guide-workspace/#Document-view",
+  "kPvActionToolDefault": "https://pdfix.net/user-guide-selection-tools/",
+  "kPvActionToolObject": "https://pdfix.net/user-guide-selection-tools/",
+  "kPvActionToolTag": "https://pdfix.net/user-guide-tag-tool/",
+  "kPvActionToolHand": "https://pdfix.net/user-guide-selection-tools/",
+  "kPvActionToolTable": "https://pdfix.net/user-guide-table-tool",
+
   // PDFix Desktop Product links
   "product_change_log": "https://pdfix.net/pdfix-desktop-changelog/",
   "product_upgrade": "https://pdfix.net/pricing/",
