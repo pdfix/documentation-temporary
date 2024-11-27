@@ -14,7 +14,7 @@ The application supports custom pipelines by chaining actions with input/output 
 
 ## Download
 
-Please contact [support@pdfix.net](mailto:support@pdfix.net) for the download link. 
+Please contact support for the download link. 
 
 
 ## Pipeline execution
