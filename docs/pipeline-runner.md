@@ -12,6 +12,10 @@ The application supports custom pipelines by chaining actions with input/output 
 - **Error Handling:** Customizable acceptable return codes for robust error management.
 - **Logging:** Configurable directories for storing execution logs.
 
+## Download
+
+Please contact support@pdfix.net for the download link. 
+
 
 ## Pipeline execution
 
