@@ -252,6 +252,32 @@ Paths to input and output files should be set only in the first and last actions
                 {
                     "name": "output_pdf",
                     "value": ""
+                },
+                {
+                    "name": "config_json",
+                    "type": "file_path",
+                    "ext": "json",
+                    "value": {
+                        "name": "add_tags",
+                        "params": [
+                            {
+                                "name": "template",
+                                "value": ""
+                            },
+                            {
+                                "name": "preflight",
+                                "value": true
+                            },
+                            {
+                                "name": "standard_attrs",
+                                "value": "false"
+                            },
+                            {
+                                "name": "sequential_headings",
+                                "value": "true"
+                            }
+                        ]
+                    }
                 }
             ],
             "configuration": {
@@ -263,24 +289,6 @@ Paths to input and output files should be set only in the first and last actions
             },
             "id": "add_tags",
             "name": "add_tags",
-            "params": [
-                {
-                    "name": "template",
-                    "value": ""
-                },
-                {
-                    "name": "preflight",
-                    "value": true
-                },
-                {
-                    "name": "standard_attrs",
-                    "value": "false"
-                },
-                {
-                    "name": "sequential_headings",
-                    "value": "true"
-                }
-            ],
             "title": "Autotag"
         },
         {
@@ -292,6 +300,20 @@ Paths to input and output files should be set only in the first and last actions
                 {
                     "name": "output_pdf",
                     "value": "/usr/tmp/this_is_output.pdf"
+                },
+                {
+                    "name": "config_json",
+                    "type": "file_path",
+                    "ext": "json",
+                    "value": {
+                        "name": "set_pdf_ua_standard",
+                        "params": [
+                            {
+                                "name": "part_number",
+                                "value": "1"
+                            }
+                        ]
+                      }
                 }
             ],
             "configuration": {
@@ -303,12 +325,6 @@ Paths to input and output files should be set only in the first and last actions
             },
             "id": "set_pdf_ua_standard",
             "name": "set_pdf_ua_standard",
-            "params": [
-                {
-                    "name": "part_number",
-                    "value": "1"
-                }
-            ],
             "title": "Set PDF/UA Standard"
         }
     ],
