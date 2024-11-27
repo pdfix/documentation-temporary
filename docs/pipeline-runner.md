@@ -14,7 +14,7 @@ The application supports custom pipelines by chaining actions with input/output 
 
 ## Download
 
-Please contact support@pdfix.net for the download link. 
+Please contact [support@pdfix.net](mailto:support@pdfix.net) for the download link. 
 
 
 ## Pipeline execution
@@ -68,7 +68,7 @@ Supported action types are:
 - **local** which is a command-line application installed on a system
 - **docker** which is embedded in a docker image with the support of a command-line interface (*docker must be installed on a system to execute such action*)
 
-Available actions are listed on [PDFix Marketplace](https://pdfix.net/products/actions-marketplace/)
+Available actions are listed on [PDFix Actions Marketplace](https://pdfix.net/products/actions-marketplace/)
 
 Action example:
 ```
