@@ -80,7 +80,7 @@ Action example:
   "path": "/path/to/application/",
   "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}",
   "platform": [ "windows", "darwin" ],
-  "returnCodes": [ 0 ],
+  "return_codes": [ 0 ],
   "args": []
 }
 ```
@@ -204,13 +204,11 @@ Paths to input and output files should be set only in the first and last actions
                     "value": "eng"
                 }
             ],
-            "configuration": {
-                "path": "",
-                "program": "docker run --platform linux/amd64 -v \"${working_directory}:/data\" --rm pdfix/ocr-tesseract:v0.4.4 --name \"${license_name}\" --key \"${license_key}\" ocr -i \"/data/${input_pdf}\" -o \"/data/${output_pdf}\" --lang \"${language}\"",
-                "returnCodes": [
-                    0
-                ]
-            },
+            "path": "",
+            "program": "docker run --platform linux/amd64 -v \"${working_directory}:/data\" --rm pdfix/ocr-tesseract:v0.4.4 --name \"${license_name}\" --key \"${license_key}\" ocr -i \"/data/${input_pdf}\" -o \"/data/${output_pdf}\" --lang \"${language}\"",
+            "return_codes": [
+                0
+            ],
             "id": "ocr_tesseract",
             "name": "ocr_tesseract",
             "title": "OCR Tesseract"
@@ -226,13 +224,11 @@ Paths to input and output files should be set only in the first and last actions
                     "value": ""
                 }
             ],
-            "configuration": {
-                "path": "",
-                "program": "docker run --platform linux/amd64 -v ${working_directory}:/data -w /data --rm pdfix/lang-detect:v0.4.4 --name \"${license_name}\" --key \"${license_key}\" lang-detect -i \"/data/${input_pdf}\" -o \"/data/${output_pdf}\"",
-                "returnCodes": [
-                    0
-                ]
-            },
+            "path": "",
+            "program": "docker run --platform linux/amd64 -v ${working_directory}:/data -w /data --rm pdfix/lang-detect:v0.4.4 --name \"${license_name}\" --key \"${license_key}\" lang-detect -i \"/data/${input_pdf}\" -o \"/data/${output_pdf}\"",
+            "return_codes": [
+                0
+            ],
             "id": "language_detection",
             "name": "language_detection",
             "title": "Language Detection"
@@ -274,13 +270,11 @@ Paths to input and output files should be set only in the first and last actions
                     }
                 }
             ],
-            "configuration": {
-                "path": "/Applications/PDFix SDK",
-                "program": "pdfix_app batch --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
-                "returnCodes": [
-                    0
-                ]
-            },
+            "path": "/Applications/PDFix SDK/bin/x86_64",
+            "program": "\"${action_path}/pdfix_app batch\" --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
+            "return_codes": [
+                0
+            ],
             "id": "add_tags",
             "name": "add_tags",
             "title": "Autotag"
@@ -310,13 +304,11 @@ Paths to input and output files should be set only in the first and last actions
                       }
                 }
             ],
-            "configuration": {
-                "path": "/Applications/PDFix SDK",
-                "program": "pdfix_app batch --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
-                "returnCodes": [
-                    0
-                ]
-            },
+            "path": "/Applications/PDFix SDK/bin/x86_64",
+            "program": "\"${action_path}/pdfix_app\" batch --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
+            "return_codes": [
+                0
+            ],
             "id": "set_pdf_ua_standard",
             "name": "set_pdf_ua_standard",
             "title": "Set PDF/UA Standard"
