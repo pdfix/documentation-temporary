@@ -80,7 +80,7 @@ Action example:
   "path": "/path/to/application/",
   "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}",
   "platform": [ "windows", "darwin" ],
-  "return_codes": [ 0 ],
+  "returnCodes": [ 0 ],
   "args": []
 }
 ```
@@ -95,7 +95,7 @@ Action example:
   - `windows` for Windows operating systems
   - `darwin` for macOS operating systems
   - `linux` for Linux operating systems
-- **return_codes** is an array of acceptable return codes the program returns. Any exit code not listed in this array is considered an error and terminates the pipeline. Devault value is `[ 0 ]`
+- **returnCodes** is an array of acceptable return codes the program returns. Any exit code not listed in this array is considered an error and terminates the pipeline. Devault value is `[ 0 ]`
 - **stdout** handles the application output (for example, to save to a file value can be ${output_txt})
 - **stderr** handles the application error (for example, to save to a file value can be ${error_txt})
 - **args** defines arguments passed to the program when executing an action
@@ -126,7 +126,7 @@ Action example with argument referencing values from another action in the pipel
       "id": "action-2-id",
       "path": "<path to a local program>",
       "program": "${action_path}/my_cli2_app -i ${input_pdf} -o ${output_pdf}",
-      "return_codes": [
+      "returnCodes": [
         0, 1
       ],
       "args": [
@@ -206,7 +206,7 @@ Paths to input and output files should be set only in the first and last actions
             ],
             "path": "",
             "program": "docker run --platform linux/amd64 -v \"${working_directory}:/data\" --rm pdfix/ocr-tesseract:v0.4.4 --name \"${license_name}\" --key \"${license_key}\" ocr -i \"/data/${input_pdf}\" -o \"/data/${output_pdf}\" --lang \"${language}\"",
-            "return_codes": [
+            "returnCodes": [
                 0
             ],
             "id": "ocr_tesseract",
@@ -226,7 +226,7 @@ Paths to input and output files should be set only in the first and last actions
             ],
             "path": "",
             "program": "docker run --platform linux/amd64 -v ${working_directory}:/data -w /data --rm pdfix/lang-detect:v0.4.4 --name \"${license_name}\" --key \"${license_key}\" lang-detect -i \"/data/${input_pdf}\" -o \"/data/${output_pdf}\"",
-            "return_codes": [
+            "returnCodes": [
                 0
             ],
             "id": "language_detection",
@@ -272,7 +272,7 @@ Paths to input and output files should be set only in the first and last actions
             ],
             "path": "/Applications/PDFix SDK/bin/x86_64",
             "program": "\"${action_path}/pdfix_app batch\" --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
-            "return_codes": [
+            "returnCodes": [
                 0
             ],
             "id": "add_tags",
@@ -306,7 +306,7 @@ Paths to input and output files should be set only in the first and last actions
             ],
             "path": "/Applications/PDFix SDK/bin/x86_64",
             "program": "\"${action_path}/pdfix_app\" batch --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
-            "return_codes": [
+            "returnCodes": [
                 0
             ],
             "id": "set_pdf_ua_standard",
