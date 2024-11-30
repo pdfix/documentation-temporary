@@ -48,12 +48,14 @@ The structure of this JSON is as follows:
   "actions": [
     {
       "name": "action-1",
-      "configuration": {},
+      "path": "<path to program>",
+      "program": "<program CLI>",
       "args": []
     },
     {
       "name": "action-2",
-      "configuration": {},
+      "path": "<path to program>",
+      "program": "<program CLI>",
       "args": []
     }
   ]
@@ -75,12 +77,10 @@ Action example:
 {
   "name": "action-1",
   "id": "action-1-id",
-  "configuration": {
-    "path": "<path to a local program>",
-    "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}"
-    "platform": [ "windows", "darwin" ],
-    "returnCodes": [ 0 ]
-  },
+  "path": "/path/to/application/",
+  "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}",
+  "platform": [ "windows", "darwin" ],
+  "returnCodes": [ 0 ],
   "args": []
 }
 ```
@@ -89,9 +89,17 @@ Action example:
 
 - **name** is a string identifier of an action. The action name can be referenced from argument values.
 - **id** is a unique identifier of an action within the pipeline. This identifier is used when referencing values of other actions in the pipeline. If `id` is not provided the processor uses the action name as an identifier.
-- **configuration** defines information for execution and platform support
-- **args** defines arguments passed to the program when executing action
-- **title** is a optional user-friendly name of an action
+- **path** is used for local actions and tells the processor a path to the executable of an action. Not required if the command is available system-wide (e.g. `docker`, `java`, ...). 
+- **program** is the command-line definition that contains the full command for execution including input or output parameters. It is highly recommended to put value macros into quotes `\"${input_pdf}\"`. The `program` may contain additional arguments provided by the pipeline-runner automatically. Such arguments are `${working_directory}`, `${license_name}`, `${license_key}`.
+- **platform**  if provided, defines platforms supported by this action. The available values are:
+  - `windows` for Windows operating systems
+  - `darwin` for macOS operating systems
+  - `linux` for Linux operating systems
+- **return_codes** is an array of acceptable return codes the program returns. Any exit code not listed in this array is considered an error and terminates the pipeline. Devault value is `[ 0 ]`
+- **stdout** handles the application output (for example, to save to a file value can be ${output_txt})
+- **stderr** handles the application error (for example, to save to a file value can be ${error_txt})
+- **args** defines arguments passed to the program when executing an action
+- **title** is an optional user-friendly name of an action
 
 Action example with argument referencing values from another action in the pipeline:
 ```
@@ -100,10 +108,8 @@ Action example with argument referencing values from another action in the pipel
     {
       "name": "action-1",
       "id": "action-1-id",
-      "configuration": {
-        "path": "<path to a local program>",
-        "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}"
-      },
+      "path": "<path to a local program>",
+      "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}"
       "args": [
         {
           "name: "input_pdf",
@@ -118,10 +124,11 @@ Action example with argument referencing values from another action in the pipel
     {
       "name": "action-2",
       "id": "action-2-id",
-      "configuration": {
-        "path": "<path to a local program>",
-        "program": "${action_path}/my_cli2_app -i ${input_pdf} -o ${output_pdf}"
-      },
+      "path": "<path to a local program>",
+      "program": "${action_path}/my_cli2_app -i ${input_pdf} -o ${output_pdf}",
+      "return_codes": [
+        0, 1
+      ],
       "args": [
         {
           "name": "input_pdf",
@@ -135,19 +142,6 @@ Action example with argument referencing values from another action in the pipel
     }
 }
 ```
-
-### Configuration
-
-**configuration** is a structure defining the execution of the external CLI program. 
-
-Configuration parameters description:
-- **path** is used for local actions and tells the processor a path to the executable of an action. Not required if the command is available system-wide (e.g. `docker`, `java`, ...). 
-- **program** is the command-line definition that contains the full command for execution including input or output parameters. It is highly recommended to put value macros into quotes `\"${input_pdf}\"`. The `program` may contain additional arguments provided by the pipeline-runner automatically. Such arguments are `${working_directory}`, `${license_name}`, `${license_key}`.
-- **platform**  if provided, defines platforms supported by this action. The available values are:
-  - `windows` for Windows operating systems
-  - `darwin` for macOS operating systems
-  - `linux` for Linux operating systems
-- **returnCodes** is an array of acceptable return codes the program returns. Any exit code not listed in this array is considered an error and terminates the pipeline. Devault value is `[ 0 ]`
 
 ### Arguments
 
