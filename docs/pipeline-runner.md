@@ -77,7 +77,7 @@ Action example:
   "id": "action-1-id",
   "configuration": {
     "path": "<path to a local program>",
-    "program": "my_cli_app -i ${input_pdf} -o ${output_pdf}"
+    "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}"
     "platform": [ "windows", "darwin" ],
     "returnCodes": [ 0 ]
   },
@@ -102,7 +102,7 @@ Action example with argument referencing values from another action in the pipel
       "id": "action-1-id",
       "configuration": {
         "path": "<path to a local program>",
-        "program": "my_cli_app -i ${input_pdf} -o ${output_pdf}"
+        "program": "${action_path}/my_cli_app -i ${input_pdf} -o ${output_pdf}"
       },
       "args": [
         {
@@ -120,7 +120,7 @@ Action example with argument referencing values from another action in the pipel
       "id": "action-2-id",
       "configuration": {
         "path": "<path to a local program>",
-        "program": "my_cli2_app -i ${input_pdf} -o ${output_pdf}"
+        "program": "${action_path}/my_cli2_app -i ${input_pdf} -o ${output_pdf}"
       },
       "args": [
         {
