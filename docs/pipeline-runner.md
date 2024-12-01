@@ -186,7 +186,13 @@ Paths to input and output files should be set only in the first and last actions
 
 **An example of the full pipeline-runner configuration:**
 
-For local execution update the following keys:
+A pipeline contains actions to perform the following operations:
+- OCR scanned PDF document with docker image `pdfix/ocr-tesseract:v0.4.4`
+- Detect PDF language with docker image `pdfix/lang-detect:v0.4.4`
+- Autotag PDF with PDFix SDK installed locally on a computer
+- Set PDF/UA standard in document metadata with PDFix SDK installed locally on a computer
+
+**For local execution update the following keys:**
 - Input and output files for processing in the first and last action
   - Input PDF file path `/usr/tmp/this_is_input.pdf`
   - Output PDF file path `/usr/tmp/this_is_output.pdf`
