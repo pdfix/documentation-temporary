@@ -186,6 +186,12 @@ Paths to input and output files should be set only in the first and last actions
 
 **An example of the full pipeline-runner configuration:**
 
+For local execution update the following keys:
+- Input and output files for processing in the first and last action
+  - Input PDF file path `/usr/tmp/this_is_input.pdf`
+  - Output PDF file path `/usr/tmp/this_is_output.pdf`
+- Path to local PDFix SDK bin directory `<path/to/PDFixSDK/bin>` in action 3 and 4
+
 ```
 {
     "actions": [
@@ -193,10 +199,16 @@ Paths to input and output files should be set only in the first and last actions
             "args": [
                 {
                     "name": "input_pdf",
+                    "type": "file_path",
+                    "flags": 2,
+                    "ext": "pdf",
                     "value": "/usr/tmp/this_is_input.pdf"
                 },
                 {
                     "name": "output_pdf",
+                    "type": "file_path",
+                    "flags": 4,
+                    "ext": "pdf",
                     "value": ""
                 },
                 {
@@ -217,10 +229,16 @@ Paths to input and output files should be set only in the first and last actions
             "args": [
                 {
                     "name": "input_pdf",
+                    "type": "file_path",
+                    "flags": 2,
+                    "ext": "pdf",
                     "value": "${ocr_tesseract.output_pdf}"
                 },
                 {
                     "name": "output_pdf",
+                    "type": "file_path",
+                    "flags": 4,
+                    "ext": "pdf",
                     "value": ""
                 }
             ],
@@ -237,10 +255,16 @@ Paths to input and output files should be set only in the first and last actions
             "args": [
                 {
                     "name": "input_pdf",
-                    "value": "${language_detection.output.pdf}"
+                    "type": "file_path",
+                    "flags": 2,
+                    "ext": "pdf",
+                    "value": "${language_detection.output_pdf}"
                 },
                 {
                     "name": "output_pdf",
+                    "type": "file_path",
+                    "flags": 4,
+                    "ext": "pdf",
                     "value": ""
                 },
                 {
@@ -270,8 +294,8 @@ Paths to input and output files should be set only in the first and last actions
                     }
                 }
             ],
-            "path": "/Applications/PDFix SDK/bin/x86_64",
-            "program": "\"${action_path}/pdfix_app batch\" --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
+            "path": "<path/to/PDFixSDK/bin>",
+            "program": "\"${action_path}/pdfix_app\" batch --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" -m \"${license_name}\" -k \"${license_key}\"",
             "returnCodes": [
                 0
             ],
@@ -283,10 +307,16 @@ Paths to input and output files should be set only in the first and last actions
             "args": [
                 {
                     "name": "input_pdf",
+                    "type": "file_path",
+                    "flags": 2,
+                    "ext": "pdf",
                     "value": "${add_tags.output_pdf}"
                 },
                 {
                     "name": "output_pdf",
+                    "type": "file_path",
+                    "flags": 4,
+                    "ext": "pdf",
                     "value": "/usr/tmp/this_is_output.pdf"
                 },
                 {
@@ -304,8 +334,8 @@ Paths to input and output files should be set only in the first and last actions
                       }
                 }
             ],
-            "path": "/Applications/PDFix SDK/bin/x86_64",
-            "program": "\"${action_path}/pdfix_app\" batch --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" --progress -m \"${license_name}\" -k \"${license_key}\"",
+            "path": "<path/to/PDFixSDK/bin>",
+            "program": "\"${action_path}/pdfix_app\" batch --input \"${input_pdf}\" --output \"${output_pdf}\" -c \"${config_json}\" -m \"${license_name}\" -k \"${license_key}\"",
             "returnCodes": [
                 0
             ],
@@ -316,7 +346,7 @@ Paths to input and output files should be set only in the first and last actions
     ],
     "name": "custom_action4",
     "id": "custom_action4",
-    "title": "Custom Action with OCR and PDF/UA fixing",
+    "title": "This is an example action",
     "type": "custom",
     "version": {
         "major": 1,
@@ -324,5 +354,4 @@ Paths to input and output files should be set only in the first and last actions
         "patch": 0
     }
 }
-
 ```
