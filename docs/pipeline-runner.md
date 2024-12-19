@@ -130,7 +130,7 @@ Available actions are listed on [PDFix Actions Marketplace](https://pdfix.net/pr
 
 Environment variables allow dynamic configuration of the pipeline runner without altering the JSON pipeline configuration. This provides flexibility for setting parameters like input and output file names.
 
-[Learn more about configuring Environment Variables](pipeline-runner-environment-variables.md).
+[Learn more about configuring Environment Variables](https://github.com/pdfix/pdfix-documentation/blob/main/docs/pipeline-runner-environment-variables.md).
 
 ## Examples
 
@@ -198,4 +198,4 @@ This pipeline performs the following steps:
 
 ### Pipeline Runner Execution from Java
 
-[Learn more about using Pipeline Runner in Java applications](pipeline-runner-environment-variables.md).
+[Learn more about using Pipeline Runner in Java applications](https://github.com/pdfix/pdfix-documentation/blob/main/docs/pipeline-runner-environment-variables.md).
