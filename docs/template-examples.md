@@ -2,30 +2,29 @@
 
 - [Template Configuration Examples](#template-configuration-examples)
   - [Thresholds and Triggers](#thresholds-and-triggers)
-    - [Create tables only with table borders](#create-tables-only-with-table-borders)
-    - [Tag area with forms (widgets) in the tablelayout](#tag-area-with-forms-widgets-in-the-tablelayout)
-    - [Set reading order detection algorithm](#set-reading-order-detection-algorithm)
-  - [Regular expressions](#regular-expressions)
-    - [Define a custom bullet](#define-a-custom-bullet)
+    - [Create Tables Only with Table Borders](#create-tables-only-with-table-borders)
+    - [Tag Area with Forms (Widgets) in the Table Layout](#tag-area-with-forms-widgets-in-the-table-layout)
+    - [Set Reading Order Detection Algorithm](#set-reading-order-detection-algorithm)
+  - [Regular Expressions and Text Functions](#regular-expressions-and-text-functions)
+    - [Define a Custom Bullet](#define-a-custom-bullet)
+    - [Set Heading by Font Name and Size](#set-heading-by-font-name-and-size)
   - [Page Object Functions](#page-object-functions)
-    - [Artifact any path object with white color](#artifact-any-path-object-with-white-color)
-  - [Text Functions](#text-functions)
-    - [Set Heading by font name and size](#set-heading-by-font-name-and-size)
+    - [Artifact Any Path Object with White Color](#artifact-any-path-object-with-white-color)
   - [Object Operators](#object-operators)
-    - [Define header by position and type](#define-header-by-position-and-type)
+    - [Define Header by Position and Type](#define-header-by-position-and-type)
 
+This page describes use cases and code examples for creating a template configuration.
 
-This page discribes use cases and code examples for creating a template configuration.
-
-For more information about the template configuration click [here](template.md)
+For more information about the template configuration, click [here](template.md) to access detailed documentation.
 
 ## Thresholds and Triggers
 
-The complete set of threshods and triggers is documented on https://github.com/pdfix/pdfix_sdk_builds/blob/main/pdf_template.md#threshold-values
+The complete set of thresholds and triggers is documented on [GitHub](https://github.com/pdfix/pdfix_sdk_builds/blob/main/pdf_template.md#threshold-values).
 
-Here is a set of the most common triggers
+Here is a set of the most common triggers:
 
-### Create tables only with table borders 
+### Create Tables Only with Table Borders
+
 `on/off`
 
 ```json
@@ -40,7 +39,8 @@ Here is a set of the most common triggers
 }
 ```
 
-### Tag area with forms (widgets) in the tablelayout 
+### Tag Area with Forms (Widgets) in the Table Layout
+
 `on/off`
 
 ```json
@@ -55,9 +55,10 @@ Here is a set of the most common triggers
 }
 ```
 
-### Set reading order detection algorithm 
-`0 - built in`
-`1 - content based`
+### Set Reading Order Detection Algorithm
+
+`0 - built-in`
+`1 - content-based`
 `2 - x-y sort`
 
 ```json
@@ -72,13 +73,13 @@ Here is a set of the most common triggers
 }
 ```
 
-## Regular expressions
+## Regular Expressions and Text Functions
 
-Regular expressions are used to identify mark specific text content and assign properties and flags to it.
+Regular expressions and text functions are used to identify and mark specific text content, assigning properties and flags as needed.
 
-### Define a custom bullet
+### Define a Custom Bullet
 
-Define a custom bullet of the unicode "✸" \\u2738.
+Define a custom bullet of the Unicode "✸" (\u2738).
 
 ```json
 {
@@ -92,11 +93,51 @@ Define a custom bullet of the unicode "✸" \\u2738.
 }
 ```
 
+### Set Heading by Font Name and Size
+
+Define conditions for text on page *1* with a minimum font size of *36* and the font name matching the regular expression *TimesNewRomanPS-BoldMT*.
+
+```json
+{
+  "template": {
+    "text_update": [
+      {
+        "heading": "h1",
+        "query": {
+          "$and": [
+            {
+              "$0_font_size": [
+                {
+                  "$gte": "36"
+                }
+              ]
+            },
+            {
+              "$0_font_name": {
+                "$regex": "TimesNewRomanPS-BoldMT"
+              }
+            },
+            {
+              "$_page_num": {
+                "$eq": 1
+              }
+            }
+          ],
+          "param": [
+            "pde_text"
+          ]
+        }
+      }
+    ]
+  }
+}
+```
+
 ## Page Object Functions
 
-Page Pbject Functions are executed on low level PDF page objects like paths, images, text chuns prior any layout recognition
+Page Object Functions are executed on low-level PDF page objects, such as paths, images, and text chunks, prior to any layout recognition.
 
-### Artifact any path object with white color
+### Artifact Any Path Object with White Color
 
 ```json
 {
@@ -124,53 +165,11 @@ Page Pbject Functions are executed on low level PDF page objects like paths, ima
 }
 ```
 
-## Text Functions
-
-### Set Heading by font name and size
-
-Define conditions for text on the page *1* with the mimimum font size *36* and the regular expression for the font name to match *TimesNewRomanPS-BoldMT*
-
-```json
-{
-  "template": {
-    "text_update": [
-      {
-        "heading": "h1",
-        "query": {
-          "$and": [
-            {
-              "$0_font_size": [
-                {
-                  "$gte": "36"
-                }
-              ]
-            },
-            {
-              "$0_font_name": {
-                "$regex": "TimesNewRomanPS-BoldMT"
-              }
-            },
-            {
-              "$_page_num"{
-                "$eq": 1
-              }
-            }
-          ],
-          "param": [
-            "pde_text"
-          ]
-        }
-      }
-    ]
-  }
-}
-```
-
 ## Object Operators
 
-### Define header by position and type
+### Define Header by Position and Type
 
-- any object with the bottom coordinate larger than 698.32 will be marked ar Artifact (Header)
+- Any object with the bottom coordinate larger than 698.32 will be marked as an artifact (header).
 
 ```json
 {
@@ -196,4 +195,3 @@ Define conditions for text on the page *1* with the mimimum font size *36* and t
   }
 }
 ```
-
