@@ -1,5 +1,16 @@
 # Template Configuration Documentation
 
+- [Template Configuration Documentation](#template-configuration-documentation)
+  - [Key Features of Templates](#key-features-of-templates)
+  - [Rules and Conditions](#rules-and-conditions)
+    - [Object Identification](#object-identification)
+    - [Applying Properties and Flags](#applying-properties-and-flags)
+  - [Creating Objects in Advance](#creating-objects-in-advance)
+  - [Workflow](#workflow)
+  - [Creating a Template](#creating-a-template)
+  - [Example JSON Configuration](#example-json-configuration)
+  - [Links and Resources](#links-and-resources)
+
 The template is a configuration file (JSON) that contains rules, flags, and thresholds to modify the recognition process.
 
 ## Key Features of Templates
@@ -100,3 +111,7 @@ Following example defines a template rule for defining the H1 heading by font si
 }
 ```
 
+## Links and Resources
+
+- [PDF Template documentation](https://github.com/pdfix/pdfix_sdk_builds/blob/main/pdf_template.md)
+- [PDF Template Examples](template-examples.md)

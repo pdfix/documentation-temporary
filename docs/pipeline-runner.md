@@ -1,5 +1,25 @@
 # PDFix Pipeline Runner
 
+- [PDFix Pipeline Runner](#pdfix-pipeline-runner)
+  - [Key Features](#key-features)
+  - [Download](#download)
+  - [Pipeline Execution](#pipeline-execution)
+    - [Parameter Description](#parameter-description)
+  - [Pipeline Configuration](#pipeline-configuration)
+    - [Defining Actions](#defining-actions)
+  - [Action Definition](#action-definition)
+    - [Action Example](#action-example)
+    - [Action Parameters](#action-parameters)
+    - [Arguments](#arguments)
+      - [Example:](#example)
+    - [Using Environment Variables](#using-environment-variables)
+  - [Examples](#examples)
+    - [Pipeline Execution Workflow](#pipeline-execution-workflow)
+      - [Notes:](#notes)
+      - [Full Pipeline Configuration:](#full-pipeline-configuration)
+    - [Pipeline Runner Execution from Java](#pipeline-runner-execution-from-java)
+
+
 The **PDFix Pipeline Runner** is a command-line tool designed to execute automated workflows, or "pipelines," for processing PDF documents. It leverages modular actions, each defined in a configuration JSON file, to perform various tasks such as OCR, language detection, and compliance checks (e.g., PDF/UA standards). These actions can either run locally or inside Docker containers, making the tool flexible and adaptable across different environments.
 
 Typical use cases include:

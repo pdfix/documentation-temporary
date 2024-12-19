@@ -1,5 +1,14 @@
 # Using Environment Variables with Pipeline Runner
 
+- [Using Environment Variables with Pipeline Runner](#using-environment-variables-with-pipeline-runner)
+  - [Benefits of Using Environment Variables](#benefits-of-using-environment-variables)
+  - [Java Example for Running Pipeline with Environment Variables](#java-example-for-running-pipeline-with-environment-variables)
+    - [Windows Example](#windows-example)
+    - [macOS/Linux Example](#macoslinux-example)
+    - [Full Java Code Example](#full-java-code-example)
+  - [Summary](#summary)
+
+
 Environment variables allow you to dynamically configure and execute the pipeline runner without altering the JSON pipeline configuration. This approach provides flexibility, enabling you to set parameters like input and output file names dynamically.
 
 This guide demonstrates how to integrate environment variables into the pipeline runner execution using Java, with examples for Windows, macOS, and Linux.
